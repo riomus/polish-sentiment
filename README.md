@@ -10,6 +10,7 @@ Requirements:
 ## Start
 ```bash
 git clone https://github.com/riomus/polish-sentiment.git
+cd polish-sentiment
 docker-compose up -d
 ```
 
