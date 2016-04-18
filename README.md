@@ -19,4 +19,3 @@ docker-compose up -d
 curl --request POST http://localhost:8091/classifier --data "Nie lubie cię"
 # {"sentiment":"NEGATIVE","metadata":{}}% 
 ```
-```
