@@ -1,0 +1,2 @@
+nlp/SentimentAnalyzers/assets/sentiment-analyzers-service-1.0-SNAPSHOT.jar filter=lfs diff=lfs merge=lfs -text
+*.jar filter=lfs diff=lfs merge=lfs -text
