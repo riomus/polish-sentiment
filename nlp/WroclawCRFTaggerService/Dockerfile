@@ -1,12 +1,7 @@
 FROM riomus/wroclawcrftagger
 
-RUN apt-get update  && \
-	apt-get install -yq  software-properties-common && \
-	add-apt-repository -y ppa:webupd8team/java  && \
-	echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections &&\
-	echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections &&\
-	apt-get update  &&\
-	apt-get install -yq oracle-java8-installer maven rpm alien && \
+RUN apt-get update  &&\
+	apt-get install -yq default-jre maven rpm alien && \
  	rm -rf /var/lib/apt/lists/*
 
 COPY assets/wcrft2-java-wrapper-rpm-1.0-SNAPSHOT20141214143930.amd64.rpm /tmp/wcrft2/wcrft2-java-wrapper.rpm
