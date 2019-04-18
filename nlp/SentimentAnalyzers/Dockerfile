@@ -1,4 +1,4 @@
-FROM polishsentiment_riomus_jarexecutor
+FROM riomus/jarexecutor
 
 RUN apt-get update   && \
 	apt-get install -yq  libblas* &&\

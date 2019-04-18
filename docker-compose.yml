@@ -1,18 +1,10 @@
 version: '3'
 
 services:
-  riomus_wcrft2:
-   command: "echo 'wcrft2 base build'"
-   build: nlp/WroclawCRFTagger
   wcrft2:
-   build: nlp/WroclawCRFTaggerService
-   depends_on:
-    - riomus_wcrft2
-  riomus_jarexecutor:
-   command: "echo 'jarexecutor base build'"
-   build: common/jarExecutor
+   image: riomus/wroclawcrftaggerservice
   sentimentanalyzers:
-   build: nlp/SentimentAnalyzers
+   image: riomus/sentimentanalyzers
    links:
     - wcrft2
    ports:
