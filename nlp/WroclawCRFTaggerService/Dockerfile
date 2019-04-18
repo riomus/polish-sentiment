@@ -1,4 +1,4 @@
-FROM polishsentiment_riomus_wcrft2
+FROM polish-sentiment_riomus_wcrft2
 
 RUN apt-get update  && \
 	apt-get install -yq  software-properties-common && \
