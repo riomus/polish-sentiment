@@ -4,7 +4,7 @@ RUN apt-get update   && \
 	apt-get install -yq  libblas* &&\
  	 rm -rf /var/lib/apt/lists/*
 
-COPY assets/sentiment-analyzers-service-1.0-SNAPSHOT.jar /sentimentAnalyzers/service.jar
+RUN wget https://github.com/riomus/polish-sentiment/blob/master/nlp/SentimentAnalyzers/assets/sentiment-analyzers-service-1.0-SNAPSHOT.jar?raw=true -O /sentimentAnalyzers/service.jar
 
 ENV JAR_LOCATION   /sentimentAnalyzers/service.jar 
 
