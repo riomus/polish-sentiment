@@ -4,7 +4,7 @@ services:
   wcrft2:
    image: riomus/wroclawcrftaggerservice
   sentimentanalyzers:
-   image: riomus/sentiment_analyzers
+   image: riomus/sentimen_analyzers
    links:
     - wcrft2
    ports:
