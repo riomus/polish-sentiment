@@ -1,7 +1,7 @@
 FROM riomus/wroclawcrftagger
 
 RUN apt-get update  &&\
-	apt-get install -yq default-jre maven rpm alien && \
+	apt-get install -yq default-jre maven rpm alien wget && \
  	rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /tmp/wcrft2
